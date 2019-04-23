@@ -1,0 +1,3 @@
+/home/mojitas/CLionProjects/PE_3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mojitas/CLionProjects/PE_3/cmake-build-debug/CMakeFiles/PE_3.dir
+/home/mojitas/CLionProjects/PE_3/cmake-build-debug/CMakeFiles/edit_cache.dir
