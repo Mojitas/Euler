@@ -1,4 +1,4 @@
-# Install script for directory: /home/mojitas/CLionProjects/PE_4
+# Install script for directory: /home/mojitas/CLionProjects/Euler/PE_4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mojitas/CLionProjects/PE_4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mojitas/CLionProjects/Euler/PE_4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
