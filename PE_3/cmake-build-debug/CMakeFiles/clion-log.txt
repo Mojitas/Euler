@@ -1,4 +1,4 @@
-/home/mojitas/Programs/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mojitas/CLionProjects/PE_3
+/home/mojitas/Programs/clion-2019.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mojitas/CLionProjects/Euler/PE_3
 -- The C compiler identification is GNU 7.3.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -8,4 +8,4 @@
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/mojitas/CLionProjects/PE_3/cmake-build-debug
+-- Build files have been written to: /home/mojitas/CLionProjects/Euler/PE_3/cmake-build-debug
