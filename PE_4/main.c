@@ -12,23 +12,19 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 int isPal(int number){
 
-    char* num = (char*)malloc(8);
-    int length = strlen(num), modCut=10;
+    char* num = (char*)malloc(7);
 
-    for (int j = 0; j <length ; j++) {
-        char[j] = itoa(number%modCut);
-        modCut=modCut*10;
-    }
 
-    puts(num);
-    exit(EXIT_SUCCESS);
+    sprintf(num,"%d",number);
+    int length = strlen(num);
+    num[length]='\0';
 
 
 
     for (int i = 0; i<length ; i) {
 
 
-        if(num[i]==num[length-i])
+        if(num[i]==num[length-i-1])
             i++;
 
         else
@@ -39,20 +35,32 @@ int isPal(int number){
 
 
 int numberGenerator(void){
-    int a=999,pal;
-    for (int i = 999; i>99 ; i--) {
-        pal=a*i;
-        if(isPal(pal))
-            return pal;
+    int pal,newPal;
+
+    for (int i = 999; i>=100 ; i--) {
+        for (int j = 999; j>=100; j--) {
+
+
+            pal = j * i;
+            if (isPal(pal)) {
+
+                if (pal >= newPal)
+                    newPal = pal;
+            }
+        }
     }
+    return newPal;
 }
 
 int main() {
     int number;
 
+    number = numberGenerator();
+    if(number>0)
+    printf("Biggest palindromic number constisting of the product of two 3-digit numbers: %d\n",number);
 
-    //number = numberGenerator();
-    //printf("Biggest palindromic number constisting of the product of two 3-digit numbers: %d\n",number);
+    else
+        printf("No palindromic number found\n");
 
     return 0;
 }
